@@ -80,4 +80,8 @@ require('lazy').setup({
     'RRethy/vim-illuminate',
 
     'simrat39/rust-tools.nvim',
+
+    {'folke/todo-comments.nvim', opts={}, dependencies = {'nvim-lua/plenary.nvim'}},
+
+    {'stevearc/conform.nvim', opts={}},
 })
