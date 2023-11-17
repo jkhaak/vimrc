@@ -78,4 +78,6 @@ require('lazy').setup({
     {'windwp/nvim-autopairs', event = "InsertEnter"},
 
     'RRethy/vim-illuminate',
+
+    'simrat39/rust-tools.nvim',
 })
