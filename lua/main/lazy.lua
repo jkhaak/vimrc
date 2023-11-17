@@ -77,4 +77,5 @@ require('lazy').setup({
 
     {'windwp/nvim-autopairs', event = "InsertEnter"},
 
+    'RRethy/vim-illuminate',
 })
