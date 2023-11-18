@@ -82,4 +82,8 @@ require('lazy').setup({
 
     'simrat39/rust-tools.nvim',
     { 'folke/todo-comments.nvim', opts = {},            dependencies = { 'nvim-lua/plenary.nvim' } },
+
+    "tpope/vim-repeat",
+    'ggandor/lightspeed.nvim',
+
 })
