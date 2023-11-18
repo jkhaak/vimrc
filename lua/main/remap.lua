@@ -1,6 +1,9 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>E", vim.cmd.Ex)
 
+vim.keymap.set("n", "<C-e>", "<C-e><C-e>")
+vim.keymap.set("n", "<C-y>", "<C-y><C-y>")
+
 vim.keymap.set("n", "<leader>-", vim.cmd.vsplit)
 vim.keymap.set("n", "<leader>_", vim.cmd.split)
 
@@ -14,10 +17,10 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("n", "<leader>vwm", function()
-	require("vim-with-me").StartVimWithMe()
+    require("vim-with-me").StartVimWithMe()
 end)
 vim.keymap.set("n", "<leader>svwm", function()
-	require("vim-with-me").StopVimWithMe()
+    require("vim-with-me").StopVimWithMe()
 end)
 
 -- greatest remap ever
@@ -48,5 +51,5 @@ vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/main/lazy.lua<CR>"
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>")
 
 vim.keymap.set("n", "<leader><leader>", function()
-	vim.cmd("so")
+    vim.cmd("so")
 end)
