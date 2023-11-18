@@ -13,9 +13,10 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
     {
-        'nvim-telescope/telescope.nvim', tag = '0.1.4',
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.4',
         -- or                            , branch = '0.1.x',
-        dependencies = { {'nvim-lua/plenary.nvim'} }
+        dependencies = { { 'nvim-lua/plenary.nvim' } }
     },
 
     'folke/tokyonight.nvim',
@@ -48,14 +49,14 @@ require('lazy').setup({
     'tpope/vim-fugitive',
     'nvim-treesitter/nvim-treesitter-context',
 
-    {'williamboman/mason.nvim', lazy = false, config = true},
-    {'williamboman/mason-lspconfig.nvim'},
+    { 'williamboman/mason.nvim',          lazy = false,   config = true },
+    { 'williamboman/mason-lspconfig.nvim' },
 
-    {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
-    {'neovim/nvim-lspconfig'},
-    {'hrsh7th/cmp-nvim-lsp'},
-    {'hrsh7th/nvim-cmp'},
-    {'L3MON4D3/LuaSnip'},
+    { 'VonHeikemen/lsp-zero.nvim',        branch = 'v3.x' },
+    { 'neovim/nvim-lspconfig' },
+    { 'hrsh7th/cmp-nvim-lsp' },
+    { 'hrsh7th/nvim-cmp' },
+    { 'L3MON4D3/LuaSnip' },
 
     'folke/zen-mode.nvim',
     'github/copilot.vim',
@@ -75,11 +76,10 @@ require('lazy').setup({
         end
     },
 
-    {'windwp/nvim-autopairs', event = "InsertEnter"},
+    { 'windwp/nvim-autopairs',    event = "InsertEnter" },
 
     'RRethy/vim-illuminate',
 
     'simrat39/rust-tools.nvim',
-
-    {'folke/todo-comments.nvim', opts={}, dependencies = {'nvim-lua/plenary.nvim'}},
+    { 'folke/todo-comments.nvim', opts = {},            dependencies = { 'nvim-lua/plenary.nvim' } },
 })
