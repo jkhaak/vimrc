@@ -18,12 +18,12 @@ lsp_zero.on_attach(function(client, bufnr)
   lsp_zero.default_keymaps({buffer = bufnr})
 end)
 
-vim.opt.autoformat = true
+vim.g.autoformat = 1
 
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*",
 	callback = function(args)
-        if vim.opt.autoformat then
+        if vim.g.autoformat > 0 then
             vim.lsp.buf.format()
         end
 	end,
