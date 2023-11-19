@@ -1,7 +1,1 @@
-require("crates").setup({
-    src = {
-        cmp = {
-            enabled = true,
-        }
-    }
-})
+require("crates").setup()
