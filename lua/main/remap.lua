@@ -4,6 +4,9 @@ vim.keymap.set("n", "<leader>E", vim.cmd.Ex)
 vim.keymap.set("n", "<C-e>", "<C-e><C-e>")
 vim.keymap.set("n", "<C-y>", "<C-y><C-y>")
 
+vim.keymap.set("n", "H", "^")
+vim.keymap.set("n", "L", "$")
+
 vim.keymap.set("n", "<leader>-", vim.cmd.vsplit)
 vim.keymap.set("n", "<leader>_", vim.cmd.split)
 
