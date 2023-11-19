@@ -90,6 +90,7 @@ require('lazy').setup({
         'saecki/crates.nvim',
         tag = 'v0.4.0',
         dependencies = { 'nvim-lua/plenary.nvim' },
-    }
+    },
 
+    "marilari88/twoslash-queries.nvim",
 })

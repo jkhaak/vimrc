@@ -38,7 +38,14 @@ require('mason-lspconfig').setup({
     }
 })
 
-lsp_zero.setup_servers({ 'lua_ls', 'tsserver', 'rust_analyzer' })
+lsp_zero.setup_servers({ 'lua_ls', 'rust_analyzer' })
+
+require('lspconfig').tsserver.setup({
+    on_attach = function(client, bufnr)
+        require("twoslash-queries").attach(client, bufnr)
+        vim.api.nvim_set_keymap("n", "<C-k>", "<cmd>TwolshalhQueriesInspect<CR>", {})
+    end,
+})
 
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
