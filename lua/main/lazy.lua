@@ -20,6 +20,7 @@ require('lazy').setup({
     },
 
     'folke/tokyonight.nvim',
+    'ellisonleao/gruvbox.nvim',
 
     {
         'folke/trouble.nvim',
