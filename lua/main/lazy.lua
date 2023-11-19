@@ -21,6 +21,7 @@ require('lazy').setup({
 
     'folke/tokyonight.nvim',
     'ellisonleao/gruvbox.nvim',
+    'sainnhe/sonokai',
 
     {
         'folke/trouble.nvim',
