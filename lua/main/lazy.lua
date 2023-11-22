@@ -19,10 +19,11 @@ require('lazy').setup({
         dependencies = { { 'nvim-lua/plenary.nvim' } }
     },
 
-    { "catppuccin/nvim",                  name = "catppuccin", priority = 1000 },
+    { "catppuccin/nvim",       name = "catppuccin", priority = 1000 },
     'folke/tokyonight.nvim',
     'ellisonleao/gruvbox.nvim',
     'sainnhe/sonokai',
+    { "EdenEast/nightfox.nvim" },
 
     {
         'folke/trouble.nvim',
@@ -52,7 +53,7 @@ require('lazy').setup({
     'tpope/vim-fugitive',
     'nvim-treesitter/nvim-treesitter-context',
 
-    { 'williamboman/mason.nvim',          lazy = false,        config = true },
+    { 'williamboman/mason.nvim',          lazy = false,   config = true },
     { 'williamboman/mason-lspconfig.nvim' },
 
     { 'VonHeikemen/lsp-zero.nvim',        branch = 'v3.x' },
