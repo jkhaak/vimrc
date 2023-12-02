@@ -25,6 +25,8 @@ require('lazy').setup({
     'sainnhe/sonokai',
     { "EdenEast/nightfox.nvim" },
 
+    { 'echasnovski/mini.nvim', version = false },
+
     {
         'folke/trouble.nvim',
         config = function()
