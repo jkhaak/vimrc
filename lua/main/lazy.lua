@@ -27,6 +27,9 @@ require('lazy').setup({
 
     { 'echasnovski/mini.nvim', version = false },
 
+    'mfussenegger/nvim-lint',
+    'mhartington/formatter.nvim',
+
     {
         'folke/trouble.nvim',
         config = function()
