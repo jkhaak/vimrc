@@ -89,8 +89,6 @@ require("lazy").setup({
 
     "RRethy/vim-illuminate",
 
-    "ray-x/go.nvim",
-    "ray-x/guihua.lua",
     "simrat39/rust-tools.nvim",
     { "folke/todo-comments.nvim", opts = {},            dependencies = { "nvim-lua/plenary.nvim" } },
 
