@@ -8,7 +8,11 @@ require("formatter").setup({
     -- Set the log level
     log_level = vim.log.levels.WARN,
     -- All formatter configurations are opt-in
+    -- See defaults https://github.com/mhartington/formatter.nvim/tree/master/lua/formatter/filetypes
     filetype = {
+        markdown = {
+            require("formatter.filetypes.markdown").denofmt,
+        },
         go = {
             require("formatter.filetypes.go").gofmt,
         },
