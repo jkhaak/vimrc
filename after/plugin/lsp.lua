@@ -54,13 +54,14 @@ require("mason-lspconfig").setup({
         "gopls",
         "rust_analyzer",
         "marksman",
+        "pyright",
     },
     handlers = {
         lsp_zero.default_setup,
     },
 })
 
-lsp_zero.setup_servers({ "lua_ls", "rust_analyzer", "gopls", "marksman" })
+lsp_zero.setup_servers({ "lua_ls", "rust_analyzer", "gopls", "marksman", "pyright" })
 
 require("lspconfig").tsserver.setup({
     on_attach = function(client, bufnr)
