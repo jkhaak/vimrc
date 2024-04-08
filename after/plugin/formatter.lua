@@ -10,6 +10,16 @@ require("formatter").setup({
     -- All formatter configurations are opt-in
     -- See defaults https://github.com/mhartington/formatter.nvim/tree/master/lua/formatter/filetypes
     filetype = {
+        json = {
+            require("formatter.filetypes.json").prettier,
+        },
+        javascript = {
+            require("formatter.filetypes.javascript").prettier,
+        },
+        typescript = {
+            require("formatter.filetypes.typescript").prettier,
+        },
+
         markdown = {
             require("formatter.filetypes.markdown").denofmt,
         },

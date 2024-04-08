@@ -1,6 +1,8 @@
-require('lint').linters_by_ft = {
-    markdown = { 'vale', },
-    python = { 'flake8' },
+require("lint").linters_by_ft = {
+    markdown = { "vale" },
+    python = { "flake8" },
+    javascript = { "eslint" },
+    typescript = { "eslint" },
 }
 
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
