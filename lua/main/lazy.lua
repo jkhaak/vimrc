@@ -19,10 +19,6 @@ require("lazy").setup({
         dependencies = { { "nvim-lua/plenary.nvim" } },
     },
 
-    { "catppuccin/nvim",       name = "catppuccin", priority = 1000 },
-    "folke/tokyonight.nvim",
-    "ellisonleao/gruvbox.nvim",
-    "sainnhe/sonokai",
     { "EdenEast/nightfox.nvim" },
 
     { "echasnovski/mini.nvim", version = false },
