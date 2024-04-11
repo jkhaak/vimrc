@@ -17,7 +17,10 @@ require("formatter").setup({
             require("formatter.filetypes.javascript").denofmt,
         },
         typescript = {
-            require("formatter.filetypes.typescript").denofmt,
+            {
+                exe = "deno",
+                args = { "fmt", "--line-width", "110", "-" },
+            },
         },
 
         markdown = {
